@@ -10,17 +10,19 @@ const listaIdiomas = document.getElementById('idiomas');
 const idiomas = document.getElementsByClassName('opcion');
 
 const titulo = document.getElementById('titulo-info');
-const subtitulo1 = document.getElementById('subtitulo1-info');
-const subtitulo2 = document.getElementById('subtitulo2-info');
-const subtitulo3 = document.getElementById('subtitulo3-info');
-const subtitulo4 = document.getElementById('subtitulo4-info');
-const subtitulo5 = document.getElementById('subtitulo5-info');
-const subtitulo6 = document.getElementById('subtitulo6-info');
+const subtitulo1 = document.querySelector('#subtitulo1-info a');
+const subtitulo2 = document.querySelector('#subtitulo2-info a');
+const subtitulo3 = document.querySelector('#subtitulo3-info a');
+const subtitulo4 = document.querySelector('#subtitulo4-info a');
+const subtitulo5 = document.querySelector('#subtitulo5-info a');
+const subtitulo6 = document.querySelector('#subtitulo6-info a');
+
 const parrafo1 = document.getElementById('parrafo1-info');
 const parrafo2 = document.getElementById('parrafo2-info');
 const parrafo3 = document.getElementById('parrafo3-info');
 const parrafo4 = document.getElementById('parrafo4-info');
 const parrafo5 = document.getElementById('parrafo5-info');
+
 const pregunta1 =document.getElementById('pregunta1-info');
 const pregunta2 =document.getElementById('pregunta2-info');
 const pregunta3 =document.getElementById('pregunta3-info');

@@ -64,7 +64,7 @@
   }
 
  header{
-       background-color: cadetblue;
+      background-color: rgb(21, 97, 158);
       color: white;
       padding: 10px;
       text-align: center;
@@ -86,13 +86,15 @@
 }
 
 footer{
-    background-color: cadetblue;
+  background-color: rgb(21, 97, 158);
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative ;
-    width: 100%;
+    padding: 5px;
+    position: absolute ;
+    width: 98%;
     bottom: 0;
+    font-size: 12px;
+    margin: 100;
 }
   
 .boton-inicio img{
