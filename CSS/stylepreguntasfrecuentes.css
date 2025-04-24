@@ -1,0 +1,235 @@
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.menu li {
+    margin: 0 10px;
+}
+.menu a:hover {
+    background: white;
+    border-radius: 5px;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .faq {
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #333;
+  }
+  
+  .faq input[type="radio"] {
+    display: none;
+  }
+  
+  .faq label {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .faq label:hover {
+    background-color: #444;
+  }
+  
+  .faq .content {
+    display: none;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+  }
+  
+  .faq input[type="radio"]:checked ~ .content {
+    display: block;
+  }
+
+ header{
+       background-color: cadetblue;
+      color: white;
+      padding: 10px;
+      text-align: center;
+  }
+  nav ul {
+      list-style: none;
+      padding: 0;
+  }
+  nav ul li{
+      display: inline;
+      margin-right: 20px ;
+  }
+  nav ul li a {
+      color: white;
+      text-decoration: none;
+  }
+  li a:hover {
+    background-color: black;
+}
+
+footer{
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative ;
+    width: 100%;
+    bottom: 0;
+}
+  
+.boton-inicio img{
+  position: fixed;
+  top: 22px;
+  right: 10px;
+  width: 25px;
+  height: auto;
+  z-index: 9999;  
+}
+.toggle-switch {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+  margin-left: auto;
+  margin-right:35px;
+  position: fixed;
+  top: 15px;
+  right: 85px; 
+}
+
+.switch-label {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: var(--dark);
+  border-radius: 25px;
+  cursor: pointer;
+  border: 3px solid var(--dark);
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+  box-shadow: inset 12px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+  background-color: var(--dark);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 15px;
+  height: 15px;
+}
+.translate{
+  display: flex;
+  justify-content: end;
+  width: 95%;
+  margin: auto;
+}
+.idioma{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  
+  position: relative;
+}
+.idioma:hover{
+  background-color: rgb(228, 228, 228);
+}
+.idiomas{
+  position: absolute;
+  top: 35px;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden ;
+}
+.idiomas li{
+  width: 100%;
+}
+.idiomas li a{
+  display: block;
+  padding: 10px;
+  font-size: 10px;
+  color:  rgb(85, 85, 85);
+}
+.idiomas li a:hover{
+  background-color: rgb(219, 219, 219);
+}
+.toggle{
+  visibility: visible;
+}
+.info{
+  width: 600px;
+  height: 100px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.info img{
+  width: 200px;
+  height: 200px;
+}
