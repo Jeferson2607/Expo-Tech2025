@@ -1,110 +1,119 @@
-
-.menu{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
+
 .menu li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
+
 .menu a:hover {
-    background: white;
-    border-radius: 5px;
+  background: white;
+  border-radius: 5px;
 }
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  body.dark-mode {
-    background-color: #121212;
-    color: white;
-  }
-  
-  .faq {
-    max-width: 700px;
-    margin: auto;
-  }
-  
-  .faq-item {
-    border-bottom: 1px solid #333;
-  }
-  
-  .faq input[type="radio"] {
-    display: none;
-  }
-  
-  .faq label {
-    display: block;
-    background-color: black;
-    color: white;
-    padding: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  .faq label:hover {
-    background-color: #444;
-  }
-  
-  .faq .content {
-    display: none;
-    background-color: #222;
-    color: white;
-    padding: 15px;
-  }
-  
-  .faq input[type="radio"]:checked ~ .content {
-    display: block;
-  }
-
- header{
-      background-color: rgb(21, 97, 158);
-      color: white;
-      padding: 10px;
-      text-align: center;
-  }
-  nav ul {
-      list-style: none;
-      padding: 0;
-  }
-  nav ul li{
-      display: inline;
-      margin-right: 20px ;
-  }
-  nav ul li a {
-      color: white;
-      text-decoration: none;
-  }
-  li a:hover {
-    background-color: black;
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-footer{
-  background-color: rgb(21, 97, 158);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    position: absolute ;
-    width: 98%;
-    bottom: 0;
-    font-size: 12px;
-    margin: 100;
+body.dark-mode {
+  background-color: #121212;
+  color: white;
 }
-  
-.boton-inicio img{
+
+.faq {
+  max-width: 700px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+}
+
+.faq input[type="radio"] {
+  display: none;
+}
+
+.faq label {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.faq label:hover {
+  background-color: #444;
+}
+
+.faq .content {
+  display: none;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+}
+
+.faq input[type="radio"]:checked~.content {
+  display: block;
+}
+
+header {
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+}
+
+footer {
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  width: 98%;
+  bottom: -300px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.boton-inicio img {
   position: fixed;
   top: 22px;
   right: 10px;
   width: 25px;
   height: auto;
-  z-index: 9999;  
+  z-index: 9999;
 }
+
 .toggle-switch {
   position: relative;
   width: 100px;
@@ -114,10 +123,10 @@ footer{
   --link: rgb(27, 129, 112);
   --link-hover: rgb(24, 94, 82);
   margin-left: auto;
-  margin-right:35px;
+  margin-right: 35px;
   position: fixed;
   top: 15px;
-  right: 85px; 
+  right: 85px;
 }
 
 .switch-label {
@@ -144,7 +153,7 @@ footer{
   transition: 0.3s;
 }
 
-.checkbox:checked ~ .slider {
+.checkbox:checked~.slider {
   background-color: var(--light);
 }
 
@@ -163,7 +172,7 @@ footer{
   transition: 0.3s;
 }
 
-.checkbox:checked ~ .slider::before {
+.checkbox:checked~.slider::before {
   -webkit-transform: translateX(50px);
   -ms-transform: translateX(50px);
   transform: translateX(50px);
@@ -172,57 +181,68 @@ footer{
   box-shadow: none;
 }
 
-ul{
+ul {
   padding-left: 0;
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
-img{
+
+img {
   width: 15px;
   height: 15px;
 }
-.translate{
+
+.translate {
   display: flex;
   justify-content: end;
   width: 95%;
   margin: auto;
 }
-.idioma{
+
+.idioma {
   display: flex;
   align-items: center;
   gap: 5px;
   padding: 10px;
-  
+
   position: relative;
 }
-.idioma:hover{
+
+.idioma:hover {
   background-color: rgb(228, 228, 228);
 }
-.idiomas{
+
+.idiomas {
   position: absolute;
   top: 35px;
   display: flex;
   flex-direction: column;
-  visibility: hidden ;
+  visibility: hidden;
 }
-.idiomas li{
+
+.idiomas li {
   width: 100%;
 }
-.idiomas li a{
+
+.idiomas li a {
   display: block;
   padding: 10px;
   font-size: 10px;
-  color:  rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
 }
-.idiomas li a:hover{
+
+.idiomas li a:hover {
   background-color: rgb(219, 219, 219);
 }
-.toggle{
+
+.toggle {
   visibility: visible;
 }
-.info{
+
+.info {
   width: 600px;
   height: 100px;
   margin-inline: auto;
@@ -231,7 +251,8 @@ img{
   flex-direction: column;
   text-align: center;
 }
-.info img{
+
+.info img {
   width: 200px;
   height: 200px;
 }
