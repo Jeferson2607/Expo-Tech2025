@@ -65,8 +65,8 @@ body.dark-mode {
 }
 
 header {
-  background-color: #0d6efd;
-  color: white;
+  background-image: url(/ImagenesGenerales/descarga\ \(1\).jpg);
+  color: #FFFFFF  ;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
@@ -93,13 +93,13 @@ li a:hover {
 }
 
 footer {
-  background-color: #0d6efd;
-  color: white;
+  background-image: url(/ImagenesGenerales/descarga\ \(1\).jpg);
+  color: #F8F8FF;
   text-align: center;
   padding: 5px;
   position: absolute;
   width: 98%;
-  bottom: -300px;
+  bottom: -200px;
   font-size: 12px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -115,7 +115,7 @@ footer {
 }
 
 .toggle-switch {
-  position: relative;
+  position: fixed;
   width: 100px;
   height: 50px;
   --light: #d8dbe0;
@@ -124,9 +124,9 @@ footer {
   --link-hover: rgb(24, 94, 82);
   margin-left: auto;
   margin-right: 35px;
-  position: fixed;
   top: 15px;
   right: 85px;
+
 }
 
 .switch-label {
@@ -186,8 +186,9 @@ ul {
   list-style: none;
 }
 
-a {
+.a {
   text-decoration: none;
+  color: #F8F8FF;
 }
 
 img {
@@ -231,11 +232,11 @@ img {
   display: block;
   padding: 10px;
   font-size: 10px;
-  color: rgb(85, 85, 85);
+  color: rgb(236, 236, 236);
 }
 
 .idiomas li a:hover {
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(133, 132, 132);
 }
 
 .toggle {
@@ -256,3 +257,16 @@ img {
   width: 200px;
   height: 200px;
 }
+
+.neon-text {
+  font-size: 15px;
+  color: #fff; /* Texto blanco */
+  text-shadow: 
+      0 0 5px #fff,       /* Sombra blanca pequeña */
+      0 0 10px #fff,      /* Sombra blanca más grande */
+      0 0 15px #fff,      /* Sombra blanca más difusa */
+      0 0 20px #0400ffd3,   /* Añadir un color de neón como morado para mayor efecto */
+      0 0 30px #1900ff,   /* Más resplandor */
+      0 0 40px #001aff,   /* Más resplandor */
+      0 0 50px #001aff; 
+     }
