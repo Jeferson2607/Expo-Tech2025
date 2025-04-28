@@ -1,0 +1,317 @@
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.menu li {
+    margin: 0 10px;
+}
+.menu a:hover {
+    background: white;
+    border-radius: 5px;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  header {
+    background-image: url(/ImagenesGenerales/descarga\ \(1\).jpg);
+    color: #FFFFFF  ;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  nav ul {
+      list-style: none;
+      padding: 0;
+  }
+  nav ul li{
+      display: inline;
+      margin-right: 20px ;
+  }
+  nav ul li a {
+      color: white;
+      text-decoration: none;
+  }
+  li a:hover {
+    background-color: black;
+}
+
+footer {
+  background-image: url(/ImagenesGenerales/descarga\ \(1\).jpg);
+  color: #F8F8FF;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  width: 98%;
+  bottom: -600px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+  
+.toggle-switch {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+  margin-left: auto;
+  margin-right:35px;
+  position: fixed;
+  top: 15px;
+  right: 85px; 
+}
+
+.switch-label {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: var(--dark);
+  border-radius: 25px;
+  cursor: pointer;
+  border: 3px solid var(--dark);
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+  box-shadow: inset 12px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+  background-color: var(--dark);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+.a{
+  text-decoration: none;
+  color: #F8F8FF;
+}
+img{
+  width: 15px;
+  height: 15px;
+}
+.translate{
+  display: flex;
+  justify-content: end;
+  width: 95%;
+  margin: auto;
+}
+.idioma{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  
+  position: relative;
+}
+.idioma:hover{
+  background-color: rgb(228, 228, 228);
+}
+.idiomas{
+  position: absolute;
+  top: 35px;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden ;
+}
+.idiomas li{
+  width: 100%;
+}
+.idiomas li a{
+  display: block;
+  padding: 10px;
+  font-size: 10px;
+  color: rgb(236, 236, 236);
+}
+
+.idiomas li a:hover {
+  background-color: rgb(133, 132, 132);
+}
+.toggle{
+  visibility: visible;
+}
+.info{
+  width: 600px;
+  height: 100px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.info img{
+  width: 25px;
+  height: 25px;
+}
+
+.imagen img {
+  align-items: start;
+  height: 50px;
+  width: 50px;
+
+}
+.neon-text {
+  font-size: 15px;
+  color: #fff; /* Texto blanco */
+  text-shadow: 
+      0 0 5px #fff,       /* Sombra blanca pequeña */
+      0 0 10px #fff,      /* Sombra blanca más grande */
+      0 0 15px #fff,      /* Sombra blanca más difusa */
+      0 0 20px #0400ffd3,   /* Añadir un color de neón como morado para mayor efecto */
+      0 0 30px #1900ff,   /* Más resplandor */
+      0 0 40px #001aff,   /* Más resplandor */
+      0 0 50px #001aff; 
+     }
+
+/* From Uiverse.io by Smit-Prajapati */ 
+.orange {
+    color: royalblue;
+  }
+  
+  .form-container {
+    max-width: 700px;
+    margin: 30px;
+    background-color: #001925;
+    padding: 30px;
+    border-left: 5px solid royalblue;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  }
+  
+  .heading {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .form-container .form .input {
+    color:royalblue;
+    width: 100%;
+    
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid transparent;
+  }
+  
+  .form-container .form .input:focus {
+    border-left: 5px solid royalblue;
+  }
+  
+  .form-container .form .textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: royalblue;
+    font-weight: bold;
+    resize: none;
+    max-height: 150px;
+    margin-bottom: 20px;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .textarea:focus {
+    border-left: 5px solid royalblue;
+  }
+  
+  .form-container .form .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-container .form .button-container .send-button {
+    flex-basis: 70%;
+    background: royalblue;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .button-container .send-button:hover {
+    background: transparent;
+    border: 1px solid royalblue;
+    color: royalblue;
+  }
+  
+  .form-container .form .button-container .reset-button-container {
+    filter: drop-shadow(1px 1px 0px royalblue);
+    flex-basis: 30%;
+  }
+  
+  .form-container .form .button-container .reset-button-container .reset-button {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: royalblue;
+    font-weight: bold;
+    background: white;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .button-container .reset-button-container .reset-button:hover {
+    background: royalblue;
+    color: white;
+  }
+  .h1{
+    color: royalblue;
+  }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas Frecuentes</title>
-    <link rel="stylesheet" href="/CSS/stylegeneral.css">
+    <link rel="stylesheet" href="/CSS/registro.css">
 </head>
 <body>
     <header>
@@ -65,11 +65,62 @@
 
 
 <main class="info">
+  <form id="formulario">
+    <h2>Formulario de Inscripción</h2>
   
+    <div class="form-row">
+      <label>Nombre completo:
+        <input type="text" id="nombre" required>
+      </label>
+  
+      <label>Correo electrónico:
+        <input type="email" id="correo" required>
+      </label>
+  
+      <label>Carrera o profesión:
+        <input type="text" id="carrera" required>
+      </label>
+    </div>
+  
+    <div>
+      <h3>Intereses:</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="intereses" value="Robótica"> Robótica</label>
+        <label><input type="checkbox" name="intereses" value="IA"> Inteligencia Artificial</label>
+        <label><input type="checkbox" name="intereses" value="Apps"> Desarrollo de Apps</label>
+        <label><input type="checkbox" name="intereses" value="Videojuegos"> Videojuegos</label>
+        <label><input type="checkbox" name="intereses" value="Ciberseguridad"> Ciberseguridad</label>
+        <label><input type="checkbox" name="intereses" value="Blockchain"> Blockchain</label>
+        <label><input type="checkbox" name="intereses" value="Big Data"> Big Data</label>
+        <label><input type="checkbox" name="intereses" value="Realidad Virtual"> Realidad Virtual</label>
+        <label><input type="checkbox" name="intereses" value="Animación 3D"> Animación 3D</label>
+        <label><input type="checkbox" name="intereses" value="Desarrollo Web"> Desarrollo Web</label>
+        <label><input type="checkbox" name="intereses" value="Diseño Gráfico"> Diseño Gráfico</label>
+      </div>
+    </div>
+
+    <button type="submit">Enviar</button>
+    <div class="confirmation" id="mensaje">    
+      </div>
+       <div id="confirmacion" class="confirmacion">
+      ¡Inscripción exitosa!
+    </div>
+  </form>
  
 </main>
-     <script src="/JS/scriptpreguntas.js"></script>
-
+     <script src="/JS/scriptregistro.js"></script>
+     
+     <footer>
+      <p>&copy; Jeferson Alcazar Picado</p>
+      <div class="redes">
+        <a  class="a" href="https://web.whatsapp.com/"><img src="/ImagenesGenerales/whatsapp.png" alt="Telefono" width="40">+506 8410
+          5258 </a><br>
+        <a class="a" href="https://workspace.google.com/intl/es-419/gmail/"><img src="/ImagenesGenerales/gmail.png" alt="Correo"
+            width="40"> jeffersonalcazar93@gmail.com</a><br>
+        <a href="https://www.instagram.com/jef_alcazar26/"><img src="/ImagenesGenerales/instagram.png" alt="Instagram"
+            width="40"></a>
+      </div>
+    </footer>
     
 </body>
 </html>

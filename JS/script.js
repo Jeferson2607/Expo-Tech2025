@@ -40,7 +40,7 @@ function establecerIdioma(idioma){
     idiomaActual.getElementsByTagName('img')[0].src = `/ImagenesIdiomas/${idioma}.png`;
    switch (idioma){ 
     case 'español':
-        titulo.textContent= 'Preguntas Frecuentes';
+        titulo.textContent= 'Inicio';
 
         subtitulo1.textContent= 'Inicio';
         subtitulo2.textContent=  'Actividades';
@@ -57,7 +57,7 @@ function establecerIdioma(idioma){
        break;
 
        case 'ingles':
-        titulo.textContent = 'Frequently Asked Questions';
+        titulo.textContent = 'Home';
 
         subtitulo1.textContent = 'Home';
         subtitulo2.textContent = 'Activities';
@@ -74,7 +74,7 @@ function establecerIdioma(idioma){
         break;
   
       case 'frances':
-        titulo.textContent = 'Questions Fréquemment Posées';
+        titulo.textContent = 'Accueil';
 
         subtitulo1.textContent = 'Accueil';
         subtitulo2.textContent = 'Activités';
@@ -95,14 +95,14 @@ function establecerIdioma(idioma){
    }
 }
  
-document.addEventListener('DOMContentLoaded',()=>{
-    switch (navigator.language) {
-        case 'es-US':
-            establecerIdioma('español')
-            break;
-        
-        default:
-            break;
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (navigator.language.startsWith('es')) {
+        establecerIdioma('español');
+    } else if (navigator.language.startsWith('en')) {
+        establecerIdioma('ingles');
+    } else if (navigator.language.startsWith('fr')) {
+        establecerIdioma('frances');
     }
 });
 // script.js
