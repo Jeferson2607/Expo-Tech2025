@@ -291,7 +291,7 @@ input[type="email"]:focus {
 }
 
 .checkbox-group label:hover {
-  background-color: black;
+  background-color: royalblue;
   color: white;
   transform: scale(1.05);
 }
@@ -303,7 +303,7 @@ body.dark-mode .checkbox-group label {
 }
 
 body.dark-mode .checkbox-group label:hover {
-  background-color: white;
+  background-color:royalblue;
   color: black;
 }
 
@@ -311,7 +311,7 @@ button {
   display: block;
   margin: 30px auto 10px auto;
   padding: 12px 30px;
-  background-color: black;
+  background-color: royalblue;
   color: white;
   border: none;
   border-radius: 12px;
@@ -321,7 +321,7 @@ button {
 }
 
 button:hover {
-  background-color: #333;
+  background-color: rgb(4, 26, 92);
   transform: scale(1.05);
 }
 

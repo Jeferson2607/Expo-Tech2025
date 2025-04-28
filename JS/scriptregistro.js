@@ -17,16 +17,26 @@ const subtitulo4 = document.querySelector('#subtitulo4-info a');
 const subtitulo5 = document.querySelector('#subtitulo5-info a');
 const subtitulo6 = document.querySelector('#subtitulo6-info a');
 
-const pregunta1 =document.getElementById('pregunta1-info');
-const pregunta2 =document.getElementById('pregunta2-info');
-const pregunta3=document.getElementById('pregunta3-info');
-const pregunta4 =document.getElementById('pregunta4-info');
-const pregunta5 =document.getElementById('pregunta5-info');
-const pregunta6 =document.getElementById('pregunta6-info');
-const pregunta7 =document.getElementById('pregunta7-info');
-const pregunta8 =document.getElementById('pregunta8-info');
-const pregunta9 =document.getElementById('pregunta9-info');
-const pregunta10 =document.querySelector('#pregunta10-info');
+const pregunta1 =document.querySelector('#pregunta1-info');
+const pregunta2 =document.querySelector('#pregunta2-info');
+const pregunta3=document.querySelector('#pregunta3-info');
+const pregunta4 =document.querySelector('#pregunta4-info');
+const pregunta5 =document.querySelector('#pregunta5-info');
+const pregunta6 =document.querySelector('#pregunta6-info');
+const  mensajeConfirmacion  =document.getElementById('confirmacion');
+
+const texto1 =document.querySelector('#texto1-info ');
+const texto2 =document.querySelector('#texto2-info ');
+const texto3 =document.querySelector('#texto3-info ');
+const texto4 =document.querySelector('#texto4-info ');
+const texto5 =document.querySelector('#texto5-info ');
+const texto6 =document.querySelector('#texto6-info ');
+const texto7 =document.querySelector('#texto7-info ');
+const texto8 =document.querySelector('#texto8-info ');
+const texto9 =document.querySelector('#texto9-info ');
+const texto10 =document.querySelector('#texto10-info ');
+const texto11 =document.querySelector('#texto11-info ');
+
 
 
 idiomaActual.addEventListener('click', ()=>{
@@ -55,16 +65,27 @@ function establecerIdioma(idioma){
         subtitulo5.textContent= 'Preguntas Frecuentes';
         subtitulo6.textContent= 'Registro';
 
-        pregunta1.textContent= 'Registro';
-        pregunta2.textContent='Registro de Expotech 2025';
-        pregunta3.textContent='Nombre';
-        pregunta4.textContent='Apellido';
-        pregunta5.textContent= 'Especificacion del Proyecto';
-        pregunta6.textContent='Categoria';
-        pregunta7.textContent='Email';
-        pregunta8.textContent='Contraseña';
-        pregunta9.textContent='Confirmar Contraseña';
-        pregunta10.textContent='Registrarse';
+        pregunta1.innerHTML= 'Formulario de Inscripción';
+        pregunta2.innerHTML='Nombre completo:  <input type="text" id="nombre" required>';
+        pregunta3.innerHTML='Correo electrónico: <input type="email" id="correo" required>';
+        pregunta4.innerHTML='Carrera o profesión: <input type="text" id="carrera" required>';
+        pregunta5.innerHTML= 'Intereses:';
+        pregunta6.innerHTML='Enviar';
+        mensajeConfirmacion .textContent='   ¡Inscripción exitosa! ';
+
+        texto1.innerHTML= ' <input type="checkbox" name="intereses" value="Robótica"> Robótica';
+        texto2.innerHTML=' <input type="checkbox" name="intereses" value="IA"> Inteligencia Artificial';
+        texto3.innerHTML=' <input type="checkbox" name="intereses" value="Apps"> Desarrollo de Apps';
+        texto4.innerHTML=' <input type="checkbox" name="intereses" value="Videojuegos"> Videojuegos';
+        texto5.innerHTML= '<input type="checkbox" name="intereses" value="Ciberseguridad"> Ciberseguridad';
+        texto6.innerHTML='<input type="checkbox" name="intereses" value="Blockchain"> Blockchain';
+        texto7.innerHTML= '<input type="checkbox" name="intereses" value="Big Data"> Big Datan';
+        texto8.innerHTML='<input type="checkbox" name="intereses" value="Realidad Virtual"> Realidad Virtual';
+        texto9.innerHTML='<input type="checkbox" name="intereses" value="Animación 3D"> Animación 3D';
+        texto10.innerHTML='<input type="checkbox" name="intereses" value="Desarrollo Web"> Desarrollo Web';
+        texto11.innerHTML= '<input type="checkbox" name="intereses" value="Diseño Gráfico"> Diseño Gráfico';
+       
+ 
 
        break;
 
@@ -78,16 +99,26 @@ function establecerIdioma(idioma){
         subtitulo5.textContent = 'FAQ';
         subtitulo6.textContent = 'Registration';
     
-        pregunta1.textContent = 'Registration';
-        pregunta2.textContent = 'Expotech 2025 Registration';
-        pregunta3.textContent = 'First Name';
-        pregunta4.textContent = 'Last Name';
-        pregunta5.textContent = 'Project Specification';
-        pregunta6.textContent = 'Category';
-        pregunta7.textContent = 'Email';
-        pregunta8.textContent = 'Password';
-        pregunta9.textContent = 'Confirm Password';
-        pregunta10.textContent = 'Sign Up';
+        pregunta1.innerHTML = 'Registration Form';
+        pregunta2.innerHTML = 'Full Name:  <input type="text" id="nombre" required>';
+        pregunta3.innerHTML = 'Email Address: <input type="email" id="correo" required>';
+        pregunta4.innerHTML = 'Career or Profession: <input type="text" id="carrera" required>';
+        pregunta5.innerHTML = 'Interests:';
+        pregunta6.innerHTML = 'Submit';
+        mensajeConfirmacion .textContent = '  Registration Successful!';
+        
+        texto1.innerHTML = '<input type="checkbox" name="intereses" value="Robótica"> Robotics';
+        texto2.innerHTML = '<input type="checkbox" name="intereses" value="IA"> Artificial Intelligence';
+        texto3.innerHTML = '<input type="checkbox" name="intereses" value="Apps"> App Development';
+        texto4.innerHTML = '<input type="checkbox" name="intereses" value="Videojuegos"> Video Games';
+        texto5.innerHTML = '<input type="checkbox" name="intereses" value="Ciberseguridad"> Cybersecurity';
+        texto6.innerHTML = '<input type="checkbox" name="intereses" value="Blockchain"> Blockchain';
+        texto7.innerHTML = '<input type="checkbox" name="intereses" value="Big Data"> Big Data';
+        texto8.innerHTML = '<input type="checkbox" name="intereses" value="Realidad Virtual"> Virtual Reality';
+        texto9.innerHTML = '<input type="checkbox" name="intereses" value="Animación 3D"> 3D Animation';
+        texto10.innerHTML = '<input type="checkbox" name="intereses" value="Desarrollo Web"> Web Development';
+        texto11.innerHTML = '<input type="checkbox" name="intereses" value="Diseño Gráfico"> Graphic Design';
+
     break;
        
   
@@ -101,16 +132,26 @@ function establecerIdioma(idioma){
         subtitulo5.textContent = 'FAQ';
         subtitulo6.textContent = 'Inscription';
     
-        pregunta1.textContent = 'Inscription';
-        pregunta2.textContent = 'Inscription à Expotech 2025';
-        pregunta3.textContent = 'Prénom';
-        pregunta4.textContent = 'Nom';
-        pregunta5.textContent = 'Spécification du projet';
-        pregunta6.textContent = 'Catégorie';
-        pregunta7.textContent = 'Email';
-        pregunta8.textContent = 'Mot de passe';
-        pregunta9.textContent = 'Confirmer le mot de passe';
-        pregunta10.textContent = 'S\'inscrire';
+        pregunta1.innerHTML = 'Formulaire d\'inscription';
+        pregunta2.innerHTML = 'Nom complet : <input type="text" id="nombre" required>';
+        pregunta3.innerHTML = 'Adresse e-mail : <input type="email" id="correo" required>';
+        pregunta4.innerHTML = 'Métier ou profession : <input type="text" id="carrera" required>';
+        pregunta5.innerHTML = 'Centres d\'intérêt :';
+        pregunta6.innerHTML = 'Envoyer';
+        mensajeConfirmacion .textContent = '  Inscription réussie ! ';
+        
+        texto1.innerHTML = '<input type="checkbox" name="intereses" value="Robótica"> Robotique';
+        texto2.innerHTML = '<input type="checkbox" name="intereses" value="IA"> Intelligence Artificielle';
+        texto3.innerHTML = '<input type="checkbox" name="intereses" value="Apps"> Développement d Applications';
+        texto4.innerHTML = '<input type="checkbox" name="intereses" value="Videojuegos"> Jeux Vidéo';
+        texto5.innerHTML = '<input type="checkbox" name="intereses" value="Ciberseguridad"> Cybersécurité';
+        texto6.innerHTML = '<input type="checkbox" name="intereses" value="Blockchain"> Blockchain';
+        texto7.innerHTML = '<input type="checkbox" name="intereses" value="Big Data"> Big Data';
+        texto8.innerHTML = '<input type="checkbox" name="intereses" value="Realidad Virtual"> Réalité Virtuelle';
+        texto9.innerHTML = '<input type="checkbox" name="intereses" value="Animación 3D"> Animation 3D';
+        texto10.innerHTML = '<input type="checkbox" name="intereses" value="Desarrollo Web"> Développement Web';
+        texto11.innerHTML = '<input type="checkbox" name="intereses" value="Diseño Gráfico"> Conception Graphique';
+
     break;
 
   
@@ -119,16 +160,16 @@ function establecerIdioma(idioma){
    }
 }
  
-document.addEventListener('DOMContentLoaded',()=>{
-    switch (navigator.language) {
-        case 'es-US':
-            establecerIdioma('español')
-            break;
-        
-        default:
-            break;
+document.addEventListener('DOMContentLoaded', () => {
+    if (navigator.language.startsWith('es')) {
+        establecerIdioma('español');
+    } else if (navigator.language.startsWith('en')) {
+        establecerIdioma('ingles');
+    } else if (navigator.language.startsWith('fr')) {
+        establecerIdioma('frances');
     }
 });
+docum
 
 document.getElementById('formulario').addEventListener('submit', function(event) {
   event.preventDefault();

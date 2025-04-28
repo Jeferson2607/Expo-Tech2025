@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
         horasElemento.textContent = '00';
         minutosElemento.textContent = '00';
         segundosElemento.textContent = '00';
-        alert('🎉 ¡Feliz Navidad!');
+        alert('🎉 ¡Inicio el evento!');
         return;
       }
   

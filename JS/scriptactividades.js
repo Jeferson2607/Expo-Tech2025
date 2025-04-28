@@ -227,13 +227,13 @@ pregunta13.innerHTML= '<b>4:00 PM | Remise des prix du hackathon et cérémonie 
    }
 }
  
-document.addEventListener('DOMContentLoaded',()=>{
-    switch (navigator.language) {
-        case 'es-US':
-            establecerIdioma('español')
-            break;
-        
-        default:
-            break;
+document.addEventListener('DOMContentLoaded', () => {
+    if (navigator.language.startsWith('es')) {
+        establecerIdioma('español');
+    } else if (navigator.language.startsWith('en')) {
+        establecerIdioma('ingles');
+    } else if (navigator.language.startsWith('fr')) {
+        establecerIdioma('frances');
     }
 });
+docum
