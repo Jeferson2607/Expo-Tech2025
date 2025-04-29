@@ -129,4 +129,3 @@ document.addEventListener('DOMContentLoaded', () => {
         establecerIdioma('frances');
     }
 });
-docum
