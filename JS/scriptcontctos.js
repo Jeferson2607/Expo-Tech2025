@@ -23,22 +23,22 @@ const pregunta4 =document.getElementById('pregunta4-info');
 const pregunta3 =document.querySelector('#pregunta3-info');
 
 
-idiomaActual.addEventListener('click', ()=>{
-    listaIdiomas.classList.toggle('toggle');
+idiomaActual.addEventListener('click',()=>{
+  listaIdiomas.classList.toggle('toggle');
 });
 
 const opcionesArray = Array.from(idiomas);
 
 opcionesArray.forEach((opcion)=>{
-    opcion.addEventListener('click', ()=>{
-        const idioma = opcion.getElementsByTagName('span') [0].textContent.toLowerCase();
-        establecerIdioma(idioma);
-    });
+  opcion.addEventListener('click',()=>{
+      const idioma = opcion.getElementsByTagName('span')[0].textContent.toLowerCase();
+      establecerIdioma(idioma);
+  });
 })
 
-function establecerIdioma(idioma){
-    idiomaActual.getElementsByTagName('img')[0].src = `/ImagenesIdiomas/${idioma}.png`;
-   switch (idioma){ 
+function establecerIdioma(idioma) {
+  idiomaActual.getElementsByTagName('img')[0].src = `/ImagenesIdiomas/${idioma}.png`;
+  switch (idioma) {
     case 'español':
         titulo.textContent= 'Contacto';
 
@@ -97,14 +97,16 @@ function establecerIdioma(idioma){
  
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (navigator.language.startsWith('es')) {
-        establecerIdioma('español');
-    } else if (navigator.language.startsWith('en')) {
-        establecerIdioma('ingles');
-    } else if (navigator.language.startsWith('fr')) {
-        establecerIdioma('frances');
-    }
+  switch(navigator.language){
+      case 'en-US':
+          establecerIdioma('ingles')
+        break;
+
+        default:
+          break;
+  }
 });
+
 document.querySelector('.card1').addEventListener('click', function() {
     window.open('https://www.instagram.com/', '_blank'); // '_blank' para abrir en nueva pestaña
   });
