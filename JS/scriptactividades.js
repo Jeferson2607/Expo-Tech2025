@@ -55,22 +55,21 @@ const pregunta11 =document.getElementById('pregunta11-info');
 const pregunta12 =document.getElementById('pregunta12-info');
 const pregunta13 =document.getElementById('pregunta12-info');
 
-idiomaActual.addEventListener('click', ()=>{
+idiomaActual.addEventListener('click',()=>{
     listaIdiomas.classList.toggle('toggle');
 });
 
 const opcionesArray = Array.from(idiomas);
 
 opcionesArray.forEach((opcion)=>{
-    opcion.addEventListener('click', ()=>{
-        const idioma = opcion.getElementsByTagName('span') [0].textContent.toLowerCase();
+    opcion.addEventListener('click',()=>{
+        const idioma = opcion.getElementsByTagName('span')[0].textContent.toLowerCase();
         establecerIdioma(idioma);
     });
 })
-
-function establecerIdioma(idioma){
-    idiomaActual.getElementsByTagName('img')[0].src = `/ImagenesIdiomas/${idioma}.png`;
-   switch (idioma){ 
+function establecerIdioma(idioma) {
+    idiomaActual.getElementsByTagName('img')[0].src = `/I/ImagenesIdiomas/${idioma}.png`;
+    switch (idioma) {
     case 'español':
         titulo.textContent= 'Actividades';
 
