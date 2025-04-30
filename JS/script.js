@@ -37,7 +37,7 @@ opcionesArray.forEach((opcion)=>{
 })
 
 function establecerIdioma(idioma){
-    idiomaActual.getElementsByTagName('img')[0].src = `ImagenesIdiomas/${idioma}.png`;
+    idiomaActual.getElementsByTagName('img')[0].src = `/ImagenesIdiomas/${idioma}.png`;
    switch (idioma){ 
     case 'español':
         titulo.textContent= 'Inicio';
