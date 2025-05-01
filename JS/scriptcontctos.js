@@ -17,22 +17,26 @@ const subtitulo4 = document.querySelector('#subtitulo4-info a');
 const subtitulo5 = document.querySelector('#subtitulo5-info a');
 const subtitulo6 = document.querySelector('#subtitulo6-info a');
 
-const pregunta1 =document.querySelector('#pregunta1-info');
-const pregunta2 =document.querySelector('#pregunta2-info');
-const pregunta4 =document.getElementById('pregunta4-info');
-const pregunta3 =document.querySelector('#pregunta3-info');
+const pregunta1 = document.querySelector('#pregunta1-info');
+const pregunta2 = document.querySelector('#pregunta2-info');
+const pregunta3 = document.querySelector('#pregunta3-info');
+const pregunta4 = document.querySelector('#pregunta4-info');
+const pregunta5 = document.querySelector('#pregunta5-info');
+const pregunta6 = document.querySelector('#reset-btn');
+const pregunta7= document.getElementById('pregunta7-info');
+const pregunta8 = document.getElementById('pregunta8-info');
 
 
-idiomaActual.addEventListener('click',()=>{
+idiomaActual.addEventListener('click', () => {
   listaIdiomas.classList.toggle('toggle');
 });
 
 const opcionesArray = Array.from(idiomas);
 
-opcionesArray.forEach((opcion)=>{
-  opcion.addEventListener('click',()=>{
-      const idioma = opcion.getElementsByTagName('span')[0].textContent.toLowerCase();
-      establecerIdioma(idioma);
+opcionesArray.forEach((opcion) => {
+  opcion.addEventListener('click', () => {
+    const idioma = opcion.getElementsByTagName('span')[0].textContent.toLowerCase();
+    establecerIdioma(idioma);
   });
 })
 
@@ -40,88 +44,131 @@ function establecerIdioma(idioma) {
   idiomaActual.getElementsByTagName('img')[0].src = `/ImagenesIdiomas/${idioma}.png`;
   switch (idioma) {
     case 'español':
-        titulo.textContent= 'Contacto';
+      titulo.textContent = 'Contacto';
 
-        subtitulo1.textContent= 'Inicio';
-        subtitulo2.textContent=  'Actividades';
-        subtitulo3.textContent= 'Contacto';
-        subtitulo4.textContent=  'Expositores';
-        subtitulo5.textContent= 'Preguntas Frecuentes';
-        subtitulo6.textContent= 'Registro';
+      subtitulo1.textContent = 'Inicio';
+      subtitulo2.textContent = 'Actividades';
+      subtitulo3.textContent = 'Contacto';
+      subtitulo4.textContent = 'Expositores';
+      subtitulo5.textContent = 'Preguntas Frecuentes';
+      subtitulo6.textContent = 'Registro';
 
-        pregunta1.innerHTML= ' <span class="heading">Deja tu mensaje</span>';
-        pregunta2.innerHTML=' <input placeholder="Nombre" type="text" class="input"> ';
-        pregunta4.textContent='Cuenta Regresiva para el inicio del evento';
-        pregunta3.textContent='INSCRIBETE YA';
+      pregunta1.innerHTML = ' <span class="heading">Deja tu mensaje</span>';
+      pregunta2.innerHTML = ' <input placeholder="Nombre" type="text" class="input"> ';
+      pregunta2.setAttribute(
+        "placeholder", "Nombre"
+      );
+      pregunta3.innerHTML = ' <input placeholder="Correo con el que te registraste" type="text" class="input"> ';
+      pregunta3.setAttribute(
+        "placeholder", "Correo con el que te registraste"
+      );
 
-       break;
+      pregunta4.setAttribute(
+        "placeholder", "Mensaje"
+      );
+      pregunta5.innerHTML='Enviar';
+      pregunta6.innerHTML = 'Borrar';
+      pregunta7.textContent=' Direccion del evento';
+      pregunta8.textContent= 'Contactanos';
 
-       case 'ingles':
-        titulo.textContent = 'Contact';
 
-        subtitulo1.textContent = 'Home';
-        subtitulo2.textContent = 'Activities';
-        subtitulo3.textContent = 'Contact';
-        subtitulo4.textContent = 'Exhibitors';
-        subtitulo5.textContent = 'Frequently Asked Questions';
-        subtitulo6.textContent = 'Registration';
-  
-        pregunta1.textContent = 'Welcome to ExpoTech 2025!';
-        pregunta2.textContent = 'ExpoTech 2025 is the most anticipated annual event for students in technical and professional education, where innovative projects and professional practices are showcased in various areas of technology and engineering. This year, ExpoTech brings together young talents, companies, and professionals from around the world, offering a unique platform to showcase skills, share knowledge, and create growth opportunities.';
-        pregunta4.textContent = 'Countdown to the start of the event';
-        pregunta3.textContent = 'REGISTER NOW';
-       
-        break;
-  
-      case 'frances':
-        titulo.textContent = 'Contact';
+      break;
 
-        subtitulo1.textContent = 'Accueil';
-        subtitulo2.textContent = 'Activités';
-        subtitulo3.textContent = 'Contact';
-        subtitulo4.textContent = 'Exposants';
-        subtitulo5.textContent = 'Questions Fréquemment Posées';
-        subtitulo6.textContent = 'Inscription';
-  
-        pregunta1.innerHTML= ' <span class="heading">Deja tu mens</span>';
-        pregunta2.innerHTML = '  <input placeholder="Name" type="text" class="input" id="pregunta2-info">';
-        pregunta4.textContent = 'Compte à rebours avant le début de l événement';
-        pregunta3.textContent = 'INSCRIVEZ-VOUS MAINTENANT';
-        break;
+    case 'ingles':
+      titulo.textContent = 'Contact';
 
-  
+      subtitulo1.textContent = 'Home';
+      subtitulo2.textContent = 'Activities';
+      subtitulo3.textContent = 'Contact';
+      subtitulo4.textContent = 'Exhibitors';
+      subtitulo5.textContent = 'Frequently Asked Questions';
+      subtitulo6.textContent = 'Registration';
+
+      pregunta1.innerHTML = ' <span class="heading">Leave your message</span>';
+      pregunta2.innerHTML = ' <input placeholder="Nombre" type="text" class="input"> ';
+      pregunta2.setAttribute(
+        "placeholder", "Name"
+      );
+      pregunta3.innerHTML = '<input placeholder="Correo con el que te registraste" id="mail" type="email" class="input" > ';
+      pregunta3.setAttribute(
+        "placeholder", "Email address you registered with"
+      );
+      pregunta4.setAttribute(
+        "placeholder", "Message"
+      );
+      pregunta5.innerHTML='Submit';
+      pregunta6.innerHTML = 'Delete';
+      pregunta7.innerHTML=' <img src="/ImagenesGenerales/mapas-y-banderas.png" alt="">Event Address';
+      pregunta8.textContent= 'Contact Us';
+
+      
+      break;
+
+    case 'frances':
+      titulo.textContent = 'Contact';
+
+      subtitulo1.textContent = 'Accueil';
+      subtitulo2.textContent = 'Activités';
+      subtitulo3.textContent = 'Contact';
+      subtitulo4.textContent = 'Exposants';
+      subtitulo5.textContent = 'Questions Fréquemment Posées';
+      subtitulo6.textContent = 'Inscription';
+
+      pregunta1.innerHTML = ' <span class="heading">laissez votre message</span>';
+      pregunta2.innerHTML = '<input placeholder="Nombre" type="text" class="input"> ';
+      pregunta2.setAttribute(
+        "placeholder", "Nom"
+      );
+
+      pregunta3.innerHTML = '<input placeholder="Correo con el que te registraste" id="mail" type="email" class="input" > ';
+      pregunta3.setAttribute(
+        "placeholder", "Adresse e-mail avec laquelle vous vous êtes inscrit"
+      );
+
+      pregunta4.setAttribute(
+        "placeholder", "laissez votre message"
+      );
+      pregunta5.innerHTML='Envoyer';
+      pregunta6.innerHTML = 'Supprimer';
+      pregunta7.innerHTML=' <img src="/ImagenesGenerales/mapas-y-banderas.png" alt=""> Adresse de l événement';
+      pregunta8.textContent= 'Contactez-nous';
+
+      
+      break;
+
+
     default:
-        break;
-   }
+      break;
+  }
 }
- 
+
 
 document.addEventListener('DOMContentLoaded', () => {
-  switch(navigator.language){
-      case 'en-US':
-          establecerIdioma('ingles')
-        break;
+  switch (navigator.language) {
+    case 'en-US':
+      establecerIdioma('ingles')
+      break;
 
-        default:
-          break;
+    default:
+      break;
   }
 });
 
-document.querySelector('.card1').addEventListener('click', function() {
-    window.open('https://www.instagram.com/', '_blank'); // '_blank' para abrir en nueva pestaña
-  });
-  
-  // Facebook
-  document.querySelector('.card2').addEventListener('click', function() {
-    window.open('https://www.facebook.com/', '_blank');
-  });
-  
-  // WhatsApp
-  document.querySelector('.card3').addEventListener('click', function() {
-    window.open('https://wa.me/1234567890', '_blank'); // Aquí pon el número o el enlace de WhatsApp
-  });
-  
-  // Gmail
-  document.querySelector('.card4').addEventListener('click', function() {
-    window.open('https://mail.google.com/', '_blank');
-  });
+document.querySelector('.card1').addEventListener('click', function () {
+  window.open('https://www.instagram.com/', '_blank'); // '_blank' para abrir en nueva pestaña
+});
+
+// Facebook
+document.querySelector('.card2').addEventListener('click', function () {
+  window.open('https://www.facebook.com/', '_blank');
+});
+
+// WhatsApp
+document.querySelector('.card3').addEventListener('click', function () {
+  window.open('https://wa.me/1234567890', '_blank'); // Aquí pon el número o el enlace de WhatsApp
+});
+
+// Gmail
+document.querySelector('.card4').addEventListener('click', function () {
+  window.open('https://mail.google.com/', '_blank');
+});
