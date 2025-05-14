@@ -318,51 +318,96 @@ text-shadow:
       outline-color: #0d6efd;
       
     }
-/* Media Queries para pantallas pequeñas */
-@media (max-width: 768px) {
-
-  /* Ajustes para el toggle de modo oscuro */
-  .toggle-switch {
-    top: 10px; /* Asegura que esté más cerca de la parte superior */
-    right: 10px; /* Alinea a la derecha */
-    position: fixed;
-  }
-
-  /* Ajuste para el cambio de idioma */
-  .translate {
-    position: fixed;
-    top: 70px; /* Ajusta la posición para que no se solapen */
-    right: 10px; /* Mantén el botón alineado a la derecha */
-    z-index: 999; /* Asegura que esté por encima de otros elementos */
-  }
-
-  /* Los elementos de la info y botones */
-  .info {
-    width: 90%; /* Asegura que los elementos de info no queden demasiado anchos */
-    margin-inline: auto;
-  }
-
-  /* Menu en pantallas pequeñas */
-  .menu {
-    display: block;
+@media screen and (max-width: 767px) {
+  header, footer {
+    padding: 10px;
     text-align: center;
   }
 
-  .menu li {
-    margin: 10px 0;
-  }
-
-  form {
+  .menu {
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 10px;
   }
 
-  input, textarea, button {
-    width: 100%;
+  .menu li {
+    margin: 5px 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 8px 12px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
     font-size: 1rem;
   }
 
-  button {
+
+  .toggle-switch {
+    top: 35px;
+    right: 300px;
+    width: 90px;
+    height: 35px;
+  }
+
+  .slider::before {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+  }
+
+  .checkbox:checked~.slider::before {
+    transform: translateX(30px);
+  }
+
+  .info {
+    width: 90%;
+    height: auto;
     padding: 15px;
+    margin: auto;
+  }
+
+  .info img {
+    width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+
+  .cuenta-regresiva {
+    padding: 20px;
+  }
+
+  #temporizador {
+    font-size: 1.5rem;
+  }
+
+  h1, h4, p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    position: static;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .neon-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 250px;
+    font-size: 1rem;
   }
 }
+
+ 

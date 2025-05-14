@@ -441,3 +441,93 @@ img{
 .card4:hover .gmail {
   fill: white;
 }
+@media screen and (max-width: 767px) {
+  header, footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu li {
+    margin: 5px 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 8px 12px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .toggle-switch {
+    top: 35px;
+    right: 300px;
+    width: 90px;
+    height: 35px;
+  }
+
+  .slider::before {
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .checkbox:checked~.slider::before {
+    transform: translateX(25px);
+  }
+
+  .info {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .info img {
+    width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+
+
+  .cuenta-regresiva {
+    padding: 20px;
+  }
+
+  #temporizador {
+    font-size: 1.5rem;
+  }
+
+  h1, h4, p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    position: static;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .neon-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 250px;
+    font-size: 1rem;
+  }
+}
